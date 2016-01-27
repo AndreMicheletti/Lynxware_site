@@ -1,0 +1,278 @@
+@charset "utf-8";
+/* CSS Document */
+
+/********************************/
+/*      LynxWare Styles        */
+/********************************/
+/*      Padrões                 */
+/********************************/
+
+
+* {
+	margin:0 auto;
+	padding:0 auto;	
+	-webkit-font-smoothing: antialiased;
+	font-family: 'Cuprum', sans-serif;
+	font-size:18px;
+	color:#FFF;	
+}
+
+a{
+	text-decoration: none;
+	color:#000;
+}
+
+body {
+	background:rgba(50,50,50,0.1);
+	/*background-image: url(images/fundo.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;*/
+}
+
+/********************************/
+/*       Divs Core              */
+/********************************/
+
+div.site {
+	position:relative;
+	width:1024px;
+	height:auto;
+	margin:0 auto;
+	padding:0px;
+	border:none; 
+}
+
+/********************************/
+/*       Header Core            */
+/********************************/
+
+div.header {
+	margin:0;
+	padding:0;
+	width:100%;
+	height:50px;
+	background-image:url(images/back.png);
+	border-bottom:1px solid #000;
+	position:fixed;
+	z-index:1000;
+}div.logo { float:left; position:absolute; }
+
+div.menu {
+	height:250px;
+	width:100%;
+	background-image:url(images/tech2.jpg);
+	background-repeat:repeat-x;
+	border-bottom:1px solid #7F7F7F;
+	text-align:center;
+} div.menu-content { 
+	height:80px; 
+	width:1024px;
+	overflow: auto;
+	margin: auto;
+	margin-top:160px;
+	top:0; left: 0; bottom: 0; right: 0;
+	position:absolute;
+	border:none; 
+	padding:0px;
+}
+
+
+div.menu-item {
+	width:198px;
+	line-height:80px;
+	font-size:24px;
+	font-style:italic;
+	font-family: 'Cuprum', sans-serif;
+	float:left;
+	background-image:url(images/btn.png);
+	background-position:-18px 0px;;
+	transition:text-indent 0.4s, background-position 0.6s;
+} div.menu-item:hover { text-indent:80px; background-position:22px 0px; }
+
+/********************************/
+/*       Content Core           */
+/********************************/
+
+div.content {
+	margin-top:70px;
+	float:left;
+	width:100%;
+	color:#000;
+}
+
+div.content-usable{
+	width:85%;
+	padding-left:8%;
+	padding-right:6%;
+	padding-top:20px;
+	padding-bottom:20px;
+	float:left;
+	color:#000;
+}
+
+div.footer {
+	background:#151515;
+	border-top:1px solid #7F7F7F;
+	width:100%;
+	padding-top:50px;
+	padding-bottom:50px;
+	height:90px;
+	color:#FFF;
+	font-size:12px;
+	font-family: 'Cuprum', sans-serif;
+	float:left;
+}
+
+p.title {
+	color:#000;
+	font-size:40px;
+	margin-left:20px;
+	text-indent:40px;
+}
+
+div.message-div {
+	width:90%;
+	margin-left:6%;
+	height:50px;
+	display:none;
+}
+
+/********************************/
+/*            Misc              */
+/********************************/
+
+a.link-menu {
+	color:#FFF;	
+	font-size:inherit;
+	font:inherit;
+	font-family:inherit;
+}
+a.link-menu:visited {
+	color:#FFF;	
+	font-size:inherit;
+	font:inherit;
+	font-family:inherit;
+}
+a.link-menu:hover {
+	color:#FFF;	
+	font-size:inherit;
+	font:inherit;
+	font-family:inherit;
+}
+
+img.logo {
+	width:326px;
+	height:154px;
+	transition:;
+	position:absolute;
+}
+img.logo:hover{
+}
+
+div.bracket-up {
+	width:90%;
+	margin-left:5%;
+	height:14px;
+	border-top:4px solid #000;
+	border-left:6px solid #000;
+	border-right:6px solid #000;
+	/*background-image:url(images/btn2.png);
+	background-position:-20px -10px;*/
+	float:left;
+}
+
+div.bracket-down {
+	width:90%;
+	margin-left:5%;
+	height:14px;
+	border-bottom:4px solid #000;
+	border-left:6px solid #000;
+	border-right:6px solid #000;
+	float:left;
+	margin-bottom:70px;
+}
+
+/* ======================================== */
+/* --= 			Social Icons	 		 =--*/
+/* ======================================== */
+
+a.facebook {
+	float:right;
+	margin-right:5px;
+	margin-top:18px;
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background-size: 32px 32px;
+	border-radius: 50%;
+	transition: background-color 0.25s;
+	background: #272727 url(images/social-icons.png);
+	transition-delay: 0s;
+	transition-duration: 0.25s;
+	transition-property: background-color;
+	transition-timing-function: ease;
+}
+
+a.facebook:hover {
+	background:#355189 url(images/social-icons.png);
+}
+
+/* ======================================== */
+/* --= 			ADM Page    	 		 =--*/
+/* ======================================== */
+
+div.adm {
+	width:100%;
+	height:100%;
+	position:absolute;
+	background-color:#777;
+	background-image:url(images/lynx_icon.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+div.login {
+	width:800px;
+	height:400px;
+	overflow: auto;
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	background:rgba(255,255,255,0.1);
+}
+
+.loginadm {
+	text-align:center;
+	color:#000;
+	font-weight:bold;
+	font-size:24px;
+	margin-top:140px;
+}
+
+input.loginadm {
+	text-align:left;
+	color:#000;
+	font-weight:normal;
+	font-size:24px;
+	margin-left:20px;
+	margin-top:20px;
+	border:1px ridge #00F;
+}
+
+#contatos {
+	width:800px;
+	height:auto;
+	overflow: auto;
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	background:rgba(255,255,255,0.1);
+	color:#000;
+	font-weight:normal;
+	font-size:24px;
+	text-align:center;
+	display:none;
+}
+
+/********************************/
